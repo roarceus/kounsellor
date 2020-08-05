@@ -1,0 +1,104 @@
+*{
+	margin: 0px;
+	padding: 0px;
+}
+html{
+	background: url('../images/loginback.jpg') no-repeat;
+	font-family: "Helvetica";
+	background-size: cover;
+}
+body{
+	font-size: 20px;
+}
+
+#header{
+	height: 80px;
+	position: sticky;
+	top: 0;
+	width: 20%;
+}
+#logoname{
+	position: absolute;
+	padding-left: 100px;
+	color: #000;
+	padding-top: 15px;
+	font-family: "Century Gothic";
+}
+
+.headerlog{
+	width: 50%;
+	margin: 150px auto 0px;
+	color: black;
+	text-align: center;
+	border-bottom: none;
+	padding: 20px;
+}
+.headerreg{
+	width: 50%;
+	margin: 80px auto 0px;
+	color: black;
+	text-align: center;
+	border-bottom: none;
+	padding: 20px;
+}
+form{
+	width: 50%;
+	margin: 0px auto;
+	padding: 20px;
+}
+.input-group{
+	margin: 10px 0px 10px 0px;
+}
+
+.input-group input{
+	height: 30px;
+	width: 93%;
+	padding: 10px 10px;
+	font-size: inherit;
+	border:2px solid #666666;
+}
+
+.input-group input:focus{
+	border: 2px solid black;
+}
+
+.btn{
+	margin: 10px 0px 10px 0px;
+	padding: 10px;
+	width:20%;
+	font-size: 20px;
+	color: white;
+	background: #000000;
+	border:2px solid black;
+	text-align: center;
+}
+
+.btn:hover{
+	background-color: #262626;
+	cursor: pointer;
+}
+
+a{
+	color: #000000;
+	text-decoration: none;
+}
+
+.error {
+	width: 92%;
+	margin: 0px auto;
+	padding: 10px;
+	border: 1px solid #a94442;
+	color: #a94442;
+	background: #f2dede;
+	border-radius: 5px;
+	text-align: left;
+}
+@media(max-width: 867px) {
+	.btn{
+		width: 40%;
+}
+
+textarea{
+	padding: 20px;
+	width: 100%;
+}

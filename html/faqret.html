@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>FAQ</title>
+	<link rel="stylesheet" href="../css/faq.css">
+	<script src="http://code.jquery.com/jquery-3.3.1.js"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+	<div id="header">
+			<div id="logoname">
+				<a href="../php/retrieve.php"><h1>KOUNSELLOR</h1></a>
+			</div>
+			<div id="logo">
+				<img src="../images/logo.png" alt="KounsellorLogo" height="80px">
+			</div>
+	</div>
+	<div id="container">
+		
+		<div class="title"><h2>FAQ</h2></div>
+		<ul class="faq">
+			<li class="q"><i class="fa fa-chevron-right">Why Kounsellor?</i></li>
+			<li class="a"> Kounsellor is a place where peace lies. You will find solutions to every questions you raise at individual level.</li>
+     
+			<li class="q"><i class="fa fa-chevron-right">Who does the counseling?</i></li>
+			<li class="a">We have world class renowned experts who consult with our dear consumers at individual level.</li>
+     
+			<li class="q"><i class="fa fa-chevron-right">Is there any confidentiality agreement?</i></li>
+			<li class="a">Yes, we value our consumers privacy the most and we sign a non disclosure agreement at the subscription.</li>
+         
+			<li class="q"><i class="fa fa-chevron-right">Are there any additional charges apart from subscription?</i></li>
+			<li class="a">Transparency and Trust is our key. There are jo additional charges apart from subscription plan.</li>
+     
+			<li class="q"><i class="fa fa-chevron-right">Is this a government certified programme?</i></li>
+			<li class="a">Our website is completely trustworthy and government certified.</li>
+		</ul>  
+	</div> 
+
+	<script type="text/javascript">
+		var action="click";
+		var speed="500";
+
+		$(document).ready(function(){
+			//question handler
+			$('li.q').on(action, function(){
+				//get next element
+				$(this).next()
+					.slideToggle(speed)
+						//select all other answers
+						.siblings('li.a')
+							.slideUp();
+				//get image for active question
+				var img = $(this).children('img');
+				//remove the 'rotate' class for all images except the active
+				$('img').not(img).removeClass('rotate');
+				//toggle rotate class
+				img.toggleClass('rotate');
+			});
+		});
+
+
+
+
+	</script>
+
+</body>
+</html>
